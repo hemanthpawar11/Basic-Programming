@@ -1,0 +1,709 @@
+package Patterns;
+
+public class Step1_Patterns {
+	public static void main(String[] args) {
+		int n=4;
+		System.out.println("---------L-shape---------");
+
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==n||j==1) {
+					System.out.print("* ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("--------oppo-L-shape---------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==n||j==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("--------Inverted-L-shape---------");
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||j==1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("--------oppo-Inverted L-shape--------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||j==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("---------C-shape--------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||i==n||j==1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("---------oppo-C-shape--------");
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||i==n||j==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+
+		System.out.println("---------U-shape--------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j==1||j==n||i==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("---------Inverted-U-shape--------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j==1||j==n||i==1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+	System.out.println("---------Box-shape--------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||i==n||j==1||j==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+}
+ 
+
+Jan 07 - 11:57 am
+package Patterns;
+
+public class Step2_Patterns {
+	public static void main(String[] args) {
+		int n=7;
+		System.out.println("----------Primary-Diagonal-------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==j) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("----------Secondary-Diagonal-------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i+j==n+1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----------N-shape-------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j==1||i==j||j==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("----------Z-shape-------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||i+j==n+1||i==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("----------Left-Arrow-------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||j==1||i==j) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----------Right-Arrow-------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||i+j==n+1||j==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+		
+		
+		System.out.println("----------X-shape-------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==j||i+j==n+1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("----------X-shape-------");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==j||i+j==n+1||i==1||i==n||j==1||j==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	
+	}
+}
+ 
+
+
+
+Jan 07 - 11:58 am
+
+
+Jan 08 - 8:32 pm
+package Pattern;
+
+public class Step1_Pattern {
+	public static void main(String[] args) {
+		int n=4;
+		System.out.println("----L-shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==n || j==1 ) {
+					System.out.print("* ");
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----Oppo. L-shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==n || j==n ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----Inverted. L-shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1 || j==1 ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----oppo.Inverted. L-shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1 || j==n ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----C-shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1 || i==n || j==1 ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("---- oppo. C-shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1 || i==n || j==n ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----U-shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j==1 || j==n || i==n ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----inverted-U-shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j==1 || j==n || i==1 ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("-----Equal-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1 ||  i==n ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("-----Parellel-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j==1 ||  j==n ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("-----Box-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||i==n||j==1||j==n ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		
+		
+	}
+}
+ 
+
+
+
+Jan 08 - 8:33 pm
+package Pattern;
+
+public class Step2_Patterns {
+	public static void main(String[] args) {
+		int n=5;
+		System.out.println("------Primary Diagonal-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==j) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("-----Secondary Diagonal-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i+j==n+1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("-----Z-Shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||i==n||i+j==n+1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("-----N-Shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j==1||j==n||i==j) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("-----oopo.N-Shape-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j==1||j==n||i+j==n+1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----Right-Arrow----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||j==n||i+j==n+1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----left-Arrow----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||j==1||i==j) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----Right Down-Arrow----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==n||j==n||i==j) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("----X-Shape----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i+j==n+1||i==j) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("---Box----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1||i==n||j==1||j==n||i+j==n+1||i==j) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		
+	}
+}
+ 
+
+
+
+Jan 08 - 8:33 pm
+package Pattern;
+
+public class Step3_Pattern {
+	public static void main(String[] args) {
+		int n=4;
+		System.out.println("------LeftUpper Traingle-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i>=j) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("------Right-Upper Traingle-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i+j>=n+1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("------Left-Down Traingle-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i+j<=n+1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("------Right-Down Traingle-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j>=i) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("------Left+Right-Upper Traingle-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n*2-1;j++) {
+				if(i>=j || i+j>=n*2) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		System.out.println("------Left+Right-Down Traingle-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n*2-1;j++) {
+				if(i+j<=n+1 || j-i>=n-1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
+		
+	}
+}
+
+
+ 
+
+Jan 08 - 8:33 pm
+package Pattern;
+
+public class Step4_Pattern {
+	public static void main(String[] args) {
+		int n=5;
+		System.out.println("------Left+Right-Down Traingle-----");
+		for(int i=1;i<=n*2-1;i++) {
+			for(int j=1;j<=n*2-1;j++) {
+				if(i+j<=n+1 || j-i>=n-1||i-j>=n-1||i+j>=n*3-1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		
+		
+		System.out.println("------Left+Right-Down Traingle-----");
+		for(int i=1;i<=n*2-1;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i+j<=n+1 || i-j>=n-1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("------Left+Right-Down Traingle-----");
+		for(int i=1;i<=n*2-1;i++) {
+			for(int j=1;j<=n;j++) {
+				if(j>=i || i+j>=n*2) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println("------Pyramid-----");
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n*2-1;j++) {
+				if(i+j==n+1 || j-i==n-1 || i==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  "); 
+				}
+			}
+			System.out.println();
+		}
+	}
+}
+ 
+
+Jan 08 - 8:34 pm

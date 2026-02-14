@@ -707,3 +707,77 @@ public class Step4_Pattern {
  
 
 Jan 08 - 8:34 pm
+
+
+
+
+
+1)WAJP Find largest among three number?
+    I/p:-int a=50,b=25,c=90;
+   o/p:=90
+
+
+2)WAJP Print largest digit in given number
+ i/p:- n=32471;
+ o/p:-Largest digit is: 7
+
+
+3)WAJP Print first 10 prime number between the range( 50 to 500)
+i/p:- 50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80....500
+
+
+ for( 50 to 500)
+o/p:53,59,61,67,71,73,79,83,89,97
+ 
+
+Jan 13 - 10:21 am
+
+
+
+
+
+4)WAJP Prime factors of each digit in given number?
+5)WAJP Print factorial of even digit in given number
+6)WAJP Print Automorphic number between the range(1 to 1000)
+7)WAJP Print 2 digit Armstrong number between the range(1 to 1000)
+8)WAJP Print Even Happy Number  between the range?(1 to 500) 
+
+Jan 13 - 10:37 am
+
+
+
+
+
+------------------------------------------------------
+array 
+1)WAJP Reverse only prime elements in array?
+   i/p:[23, 65, 73, 21, 14 , 13 , 91 , 37 ]
+
+2)WAJP Find occurrence even elements in array ?
+i/p: [2 3 4 5 6 2 3 2 5 4 2 12,2,6]
+
+3)WAJP Print array ele with alternative sign?
+i/p: [ -9,-8,3,23,-7,12,-34,-45,34]
+
+---------------------------------------
+1)WAJP Rotation of String line clockwise and Anticlockwise?
+2)check given two strings are Anagram are not without using tocharArray and sort method
+3)WAJP Make 1st latter of each latter to uppercase
+ex:- "my name is tom"
+o/p:-"My Name Is Tom"
+
+
+
+
+ 
+
+Feb 02 - 10:38 am
+4)WAJP Prime factors of each digit in given number?
+5)WAJP Print factorial of even digit in given number
+6)WAJP Print Automorphic number between the range(1 to 1000)
+7)WAJP Print 2 digit Armstrong number between the range(1 to 1000)
+
+
+ 
+
+Feb 02 - 11:28 am
